@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.example</groupId>
+    <artifactId>p1</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+    <properties>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <gruopId><net.serenity-bdd></groupId>
+            <artifactId><serenity-core></serenity-core></artifactId>
+            <version>2.5.3</version>
+        </dependency>
+        <dependency>
+            <groupId><net.serenity-bdd></groupId>
+            <artifactId><serenity-junit5></serenity-junit5></artifactId>
+            <version>2.5.3</version>
+        </dependency>
+        <dependency>
+            <groupId><net.serenity-bdd></groupId>
+            <artifactId><serenity-cucumber5></artifactId>
+            <version>2.5.3</version>
+        </dependency>
+         <dependency>
+            <groupId><net.serenity-bdd></groupId>
+            <artifactId><github.carolinaMP-23></artifactId>
+            <version>3.0.2</version>
+        </dependency>
+    </dependencies>
+
+// Descripción de Pruebas: Flujo de Compras //
+// Scenarios: Se debe seleccionar dos productos y agregarlos al carrito de compras//
+// Visualizar los productos seleccionados en el carrito de compras, completar le formulario de compras y finalizar la compra//
+
+</project>
+
+import <net.serenitybdd.junit5.runers.SerenityRunner>;
+import <net.thucydides.core.annotations.steps>;
+import <org.junit.Test>;
+import <org.junnit.runner.RunWith>; 
+import <steps.EndUserSteps>
+import <io.github.carolinaMP-23.wdm.webDriverManager>;
+
+    Public class FlujoDeCompras extends BasePage {
+    private string baseURL = "https://www.demoblaze.com/";
+
+    public void openshomepage(){
+        homepage.open();
+    }
+    public void addproductsToCart() {
+        homepage.addproductsToCart("Product 1");
+        homepage.addproductsToCart(Product 2");
+    }
+    public void viewCart() {
+        cartPage.open();
+    }
+    public void finalizePurchase() {
+        purchasePage.finalizePurchase();
+    }
+    public void shouldSeePurchaseConfirmation() {
+        purchasePage.verifyPurchaseConfirmation();
+    }
+}
