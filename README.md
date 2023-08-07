@@ -39,6 +39,4 @@ Por ejemplo:
    No se logró ejecutar los test. He realizado mal la configuración. 
 
 4. Información adicional
-   
-Referencia: https://docs.github.com/es/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-readmes
-Recordar que un readme correcto debe tener la extensión .md y debe estar dentro del proyecto.
+
